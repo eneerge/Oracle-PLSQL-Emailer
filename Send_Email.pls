@@ -16,7 +16,7 @@ CREATE OR REPLACE PROCEDURE send_email (
 IS
  
 /*
-  Author:
+  Author: Evan Greene
   Date: 2016.04.22
   Description: Modularized email procedure so I didn't have to recreate the wheel each time.  Written from scratch.
  
