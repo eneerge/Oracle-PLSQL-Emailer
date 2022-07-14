@@ -110,9 +110,7 @@ IS
       IF LENGTH(l_email_cc) > 0 THEN
         l_temp := l_temp || 'cc: ' || l_email_cc || UTL_TCP.crlf;
       END IF;
-      IF LENGTH(l_email_bcc) > 0 THEN
-        l_temp := l_temp || 'bcc: ' || l_email_bcc || UTL_TCP.crlf;
-      END IF;
+
       l_temp := l_temp || 'From: "' || l_email_from_name || '" <' || l_email_from || '>' || UTL_TCP.crlf;
       l_temp := l_temp || 'Subject: ' || l_email_subject || UTL_TCP.crlf;
      
